@@ -1,0 +1,220 @@
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+}
+
+.types-container {
+    max-width: 450px;
+    display: flex;
+
+    flex-wrap: wrap;
+}
+
+.type:nth-child(even) {
+    margin: 0 0 20px 20px
+}
+
+.type {
+    background: rgba(255, 255, 255, 0.20);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(7.0px);
+    -webkit-backdrop-filter: blur(7.0px);
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.types-change {
+    background: rgba(255, 255, 255, 0.20);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(7.0px);
+    -webkit-backdrop-filter: blur(7.0px);
+    border-radius: 10px;
+    width: 1170px;
+    height: 300px;
+    z-index: 20;
+    position: absolute;
+    left: 10%;
+    padding: 0 20px;
+    display: grid;
+    place-items: center;
+}
+
+.edit-act {
+    margin-top: 10px;
+    padding: 20px 25px;
+    background: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+.change-todos textarea {
+    resize: none;
+    margin-top: 10px;
+    background: none;
+    outline: none;
+    width: 400px;
+    padding: 10px;
+}
+
+.change-todos button {
+    margin-top: 10px;
+    width: 400px;
+    height: 40px;
+    transition: .3s;
+    background: none;
+    border: #333 1px solid;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+}
+.change-todos button:hover{
+    background: #333333;
+    color: #fff;
+}
+.change-todos {
+    display: flex;
+    flex-direction: column;
+}
+
+:root {
+    --color: green;
+    --disabled: #959495;
+}
+
+.checkbox {
+    margin: 5px 0 0 10px;
+    display: grid;
+    grid-template-columns: min-content auto;
+    grid-gap: 0.5em;
+    font-size: 1.1rem;
+    color: var(--color);
+}
+
+.checkbox--disabled {
+    color: var(--disabled);
+}
+
+.checkbox__control {
+    display: inline-grid;
+    width: 1em;
+    height: 1em;
+    border-radius: 0.25em;
+    border: 0.1em solid currentColor;
+}
+
+.checkbox__control svg {
+    transition: transform 0.1s ease-in 25ms;
+    transform: scale(0);
+    transform-origin: bottom left;
+}
+
+.checkbox__input {
+    display: grid;
+    cursor: pointer;
+    grid-template-areas: "checkbox";
+}
+
+.checkbox__input > * {
+    grid-area: checkbox;
+}
+
+.checkbox__input input {
+    opacity: 0;
+    width: 1em;
+    height: 1em;
+    cursor: pointer;
+}
+
+.checkbox__input input:focus + .checkbox__control {
+    box-shadow: 0 0 0 0.05em #fff, 0 0 0.15em 0.1em currentColor;
+}
+
+.checkbox__input input:checked + .checkbox__control svg {
+    transform: scale(1);
+}
+
+.checkbox__input input:disabled + .checkbox__control {
+    color: var(--disabled);
+}
+.wrapper{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.modal-main{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+.modal{
+    background: rgba(255, 255, 255, 0.20);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(7.0px);
+    -webkit-backdrop-filter: blur(7.0px);
+    border-radius: 10px;
+    width: 600px;
+    height: 300px;
+    display:none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.modal-input{
+    resize: none;
+    background: 0;
+    border-radius: 5px;
+    border: 1px #333 solid;
+    padding: 10px;
+    outline: none;
+    width: 300px;
+}
+.modal-accept, .modal-close{
+    margin-top: 10px;
+    border-radius: 5px;
+    background: 0;
+    border: 1px #333 solid;
+    padding: 10px 25px;
+    font-size: 15px;
+    transition: .5s;
+    color: #333;
+    cursor: pointer;
+    outline: none;
+}
+.modal-input-container{
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+.modal-finish-container{
+    display: flex;
+    align-items: center;
+    width: 95%;
+    justify-content: space-around;
+    border: 1px #333 solid;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.finish-button, .cancel-finish-button{
+    cursor: pointer;
+    margin-right: 20px;
+}
+.modal-input-container .modal-input{
+    margin-top: 10px;
+}
+.modal-accept:hover, .modal-close:hover{
+    background: #333;
+    color: #f2f2f2;
+}
+
+footer{
+    margin-top: -50px !important;
+}

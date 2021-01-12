@@ -1,0 +1,201 @@
+.settings-container, .new-settings-container, .main-themes-container {
+    padding: 5px 0 25px 0;
+    border-radius: 4px;
+    background: white;
+    margin-top: 50px;
+}
+.setting {
+    position: relative;
+    padding: 0 15px;
+}
+
+.setting-title_container {
+    padding-top: 20px;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.setting-title {
+    padding-bottom: 5px;
+    color: #999;
+    font-weight: normal;
+    font-size: 25px;
+}
+.setting-newPhoto{
+    width: 38.5em;
+    height: 100%;
+    background: none;
+    border: 0;
+    outline: none;
+    padding:.8em 0;
+}
+.setting-newPhoto::-webkit-file-upload-button{
+    visibility: hidden;
+}
+.setting-newPhoto:before{
+    content: 'Wybierz zdęjcie';
+    display: inline-block;
+    background: linear-gradient(top, #f9f9f9, #e3e3e3);
+    border: 1px solid #999;
+    border-radius: 3px;
+    padding: 5px 8px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    text-shadow: 1px 1px #fff;
+    font-weight: 700;
+    transition: .3s;
+    font-size:15px;
+}
+.setting-value-change_container, .setting-value_container {
+    margin-top: 10px;
+}
+
+.setting-value-change, .new-setting-save-value, .main-searchBar-field input {
+    background: none;
+    border: #333 solid 1px;
+    padding: 5px 14px;
+    transition: .3s;
+    border-radius: 4px;
+}
+.setting-value-change_container{
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+    transition: .3s !important;
+    border-radius:0 !important;
+}
+.main-searchBar-field input {
+    width: 500px;
+    height: 30px;
+    transition: .3s;
+}
+
+.main-searchBar-field input:focus {
+    transform: scale(1.1);
+}
+
+.setting-value-change:hover, .change-todos button:hover, .new-setting-save-value:hover {
+    background: #333;
+    cursor: pointer;
+    color: white;
+}
+
+.new-setting-save-value-container {
+    display: grid;
+    place-items: center;
+}
+
+.setting-value-change_button {
+    display: flex;
+    justify-content: space-around;
+    border: #333 solid 1px;
+    align-items: center;
+    width: 185px;
+}
+
+.setting-value-change_container div button {
+    background: none !important;
+    border: 0 !important;
+    cursor: pointer !important;
+    padding: 5px 14px !important;
+    transition: .3s !important;
+    outline: none !important;
+    font-size: 14px !important;
+}
+.setting-value-change_container img {
+    width: 15px !important;
+    height: 15px !important;
+    object-fit: cover !important;
+    display: block !important;
+}
+
+.setting-value_container img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.new-settings-container {
+    display: none;
+}
+
+.new-setting-value::placeholder {
+    color: #333;
+    border-radius: 4px;
+}
+.birthday{
+    display: flex;
+    align-items: center;
+    height: 50px;
+
+}
+.birth-info span{
+    font-weight: 300;
+    font-size: 20px;
+
+}
+.birth-month{
+    margin-left: 15px;
+}
+.connectAccounts-container{
+    width: 300px;
+    height: 50px;
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.55 );
+    backdrop-filter: blur( 12px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2345;
+    animation: scroll .4s 1;
+}
+.connectAccounts-container button{
+    background: none;
+    border: none;
+    outline: none;
+}
+.accounts{
+    display: flex;
+}
+@keyframes scroll {
+    from{
+        top: 0;
+    }
+    to{
+        top: 300px;
+    }
+}
+.connect-mail, .connect-facebook{
+    padding:10px;
+    border-radius: 5px;
+    margin: 10px;
+    width: 50px;
+    text-align: center;
+    cursor: pointer;
+    transition: .3s;
+}
+.connect-mail:hover, .connect-facebook:hover{
+    transform: scale(1.1);
+    font-size: calc(100% + 5px);
+}
+.connect-mail{
+    background: red;
+    color: #f2f2f2;
+}
+.connect-facebook{
+    background: blue;
+    color: #f2f2f2;
+}
+.fa-times-circle{
+    cursor: pointer;
+}
+footer{
+    margin-top: 0 !important;
+}

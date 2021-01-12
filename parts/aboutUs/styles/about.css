@@ -1,0 +1,19 @@
+.aboutUs-title-container{
+    margin-top: 60px;
+}
+.aboutUs-info span {
+    font-weight: bold;
+}
+
+.aboutUs-title {
+    font-size: 30px;
+    margin: 30px 0;
+}
+
+.aboutUs-info p {
+    font-size: 25px;
+}
+
+footer{
+    margin-top: 0 !important;
+}

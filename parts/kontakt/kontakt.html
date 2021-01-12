@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../styles/general.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <title>Help desc</title>
+</head>
+<body>
+<header>
+    <div class="wrapper">
+        <div class="header-container">
+            <div>
+                <a href="../../index.html"><h1 class="header-title wobble-vertical">Help Desc</h1></a>
+            </div>
+            <nav class="nav">
+                <li class="nav_link  wobble-vertical"><a href="../main/main.html">Strona Główna</a></li>
+                <li class="nav_link  wobble-vertical"><a href="../settings/settings.html">Ustawienia</a></li>
+                <li class="nav_link  active wobble-vertical"><a href="kontakt.html">Kontakt</a></li>
+                <li class="nav_link  wobble-vertical"><a href="../newsLine/newsLine.html">Nowiny</a></li>
+                <li class="nav_link  wobble-vertical"><a href="../aboutUs/aboutUS.html">O nas</a></li>
+                <li class="nav_link  wobble-vertical"><a href="../todos/todos.html">Plan</a></li>
+                <li class="nav_link  wobble-vertical"><a href="../reviews/reviews.html">Opinia</a></li>
+                <li class="nav_link  wobble-vertical"><a href="../questions/questions.html">Q&A</a></li>
+                <li class="nav_link  wobble-vertical"><a href="../cooperation/cooperation.html">Kooperacja</a></li>
+            </nav>
+        </div>
+    </div>
+</header>
+<section>
+    <div class="wrapper">
+        <div class="kontakt-devs-container">
+            <h2>Main Devs:</h2>
+        </div>
+        <div class="kontakt-container">
+            <div class="todo-error">
+                <div class="conf-modal center error">
+                    <div class="modal-icon">
+                        <img src="../../assets/imgs/close.svg">
+                    </div>
+                    <div class="modal-text error"><h2>Bląd!</h2></div>
+                    <p>Proszę Pana/Pani napisać coś</p>
+                    <div class="modal-footer ">
+                        <div class="conf-but error green">Ok</div>
+                    </div>
+                </div>
+            </div>
+            <div class="todo-success">
+                <div class="conf-modal center success">
+                    <div class="modal-icon">
+                        <img src="../../assets/imgs/check.svg">
+                    </div>
+                    <div class="modal-text success"><h2>Sukces!</h2></div>
+                    <p>Twoja wiadomość została wysłana</p>
+                    <div class="modal-footer">
+                        <div class="conf-but  success green">Ok</div>
+                    </div>
+                </div>
+            </div>
+            <div class="kontakt-cards-container">
+                <div class="kontakt-card">
+                    <div class="kontakt-card-name-container">
+                        <p>Dmytro Kazantsev</p>
+                    </div>
+                    <div class="kontakt-card-photo-container">
+                        <img src="../../assets/imgs/enot.jpg" alt="">
+                    </div>
+                    <div class="kontakt-card-social-container">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="kontakt-card">
+                    <div class="kontakt-card-name-container">
+                        <p>Sebastian Koper</p>
+                    </div>
+                    <div class="kontakt-card-photo-container">
+                        <img src="../../assets/imgs/enot2.jpg" alt="">
+                    </div>
+                    <div class="kontakt-card-social-container">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="kontakt-textarea-container">
+                <div class="kontakt-select">
+                    <select name="slct" id="slct">
+                        <option selected disabled>Choose who to write to</option>
+                        <option value="1">Dmytro Kazantsev</option>
+                        <option value="2">Sebastian Koper</option>
+                    </select>
+                </div>
+                <div class="kontakt-textarea">
+                    <textarea id="textarea" placeholder="Wiadomość"></textarea>
+                    <button id="kontakt-button">&#9658;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="wrapper">
+        <div class="footer-social-container">
+            <div class="developer-info">
+                <div class="developer_name-container">
+                    <h3 class="developer_name">Wykonane przez Dmytro Kazantsev</h3>
+                </div>
+                <div class="developer-social-link-container">
+                    <div>
+                        <a href="https://www.facebook.com/profile.php?id=100017103918497"><i
+                                class="fab fa-facebook-f"></i></a>
+                    </div>
+                    <div>
+                        <a href="https://www.instagram.com/dimovski__/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="developer-info">
+                <div class="developer_name-container">
+                    <h3 class="developer_name">Wykonane przez Sebastian Koper</h3>
+                </div>
+                <div class="developer-social-link-container">
+                    <div>
+                        <a href="https://www.facebook.com/sebastian.koper.161/"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                    <div>
+                        <a href="https://www.instagram.com/sebastian_koper_/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+<script src="scripts/kontakt.js"></script>
+</html>

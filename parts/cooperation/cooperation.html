@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../styles/general.css">
+    <link rel="stylesheet" href="styles/cooperation.css">
+    <title>Help desc</title>
+</head>
+<body>
+<header>
+    <div class="wrapper">
+        <div class="header-container">
+            <div>
+                <a href="../../index.html"><h1 class="header-title wobble-vertical">Help Desc</h1></a>
+            </div>
+            <nav class="nav">
+                <li class="nav_link  wobble-vertical"><a href="../main/main.html">Strona Główna</a></li>
+                <li class="nav_link  wobble-vertical"><a href="../settings/settings.html">Ustawienia</a></li>
+                <li class="nav_link  wobble-vertical"><a href="../kontakt/kontakt.html">Kontakt</a></li>
+                <li class="nav_link  wobble-vertical"><a href="../newsLine/newsLine.html">Nowiny</a></li>
+                <li class="nav_link  wobble-vertical"><a href="../aboutUs/aboutUS.html">O nas</a></li>
+                <li class="nav_link  wobble-vertical"><a href="../todos/todos.html">Plan</a></li>
+                <li class="nav_link  wobble-vertical"><a href="../reviews/reviews.html">Opinia</a></li>
+                <li class="nav_link  wobble-vertical"><a href="../questions/questions.html">Q&A</a></li>
+                <li class="nav_link  active wobble-vertical"><a href="cooperation.html">Kooperacja</a></li>
+            </nav>
+        </div>
+    </div>
+</header>
+<section>
+    <div class="wrapper">
+        <div class="cooperation-container">
+            <div class="cooperation-title">
+                <ul>Szukamy w zespoł:
+                    <li>Backend Developer ( C#, PHP )</li>
+                    <li>Frontend Developer ( React )</li>
+                    <li>Mobile Developer ( React Native )</li>
+                    <li>Seo</li>
+                </ul>
+            </div>
+        </div>
+        <div class="respond-container">
+            <div class="respond">
+                <div class="respond-vacancy-container">
+                    <div class="respond-select">
+                        <select name="slct" id="slct">
+                            <option selected disabled>Wybierz wakat</option>
+                            <option value="1">Backend Developer ( C#, PHP )</option>
+                            <option value="2">Frontend Developer ( React )</option>
+                            <option value="3">Mobile Developer ( React Native )</option>
+                            <option value="4">Seo</option>
+                        </select>
+                    </div>
+                    <div class="respond-form">
+                        <div class="respond-form-info">
+                            <div>
+                                <input class="respond-form-infoInput" type="text" placeholder="Imie">
+                            </div>
+                            <div>
+                                <input class="respond-form-infoInput" type="text" placeholder="Nazwisko">
+                            </div>
+                        </div>
+                        <div class="respond-form-email">
+                            <input class="respond-form-emailInput" type="email" placeholder="Email">
+                        </div>
+                        <div>
+                            <textarea class="respond-form-infoTextarea" placeholder="Informacja"></textarea>
+                        </div>
+                        <div class="respond-form-button">
+                            <button>Send</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="wrapper">
+        <div class="footer-social-container">
+            <div class="developer-info">
+                <div class="developer_name-container">
+                    <h3 class="developer_name">Wykonane przez Dmytro Kazantsev</h3>
+                </div>
+                <div class="developer-social-link-container">
+                    <div>
+                        <a href="https://www.facebook.com/profile.php?id=100017103918497"><i
+                                class="fab fa-facebook-f"></i></a>
+                    </div>
+                    <div>
+                        <a href="https://www.instagram.com/dimovski__/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="developer-info">
+                <div class="developer_name-container">
+                    <h3 class="developer_name">Wykonane przez Sebastian Koper</h3>
+                </div>
+                <div class="developer-social-link-container">
+                    <div>
+                        <a href="https://www.facebook.com/sebastian.koper.161/"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                    <div>
+                        <a href="https://www.instagram.com/sebastian_koper_/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+<script>
+    var bg = document.querySelector ( '.item-bg' );
+    var items = document.querySelectorAll ( '.news__item' );
+    var item = document.querySelector ( '.news__item' );
+
+    function cLog(content) {
+        console.log ( content )
+    }
+
+    if ( $ ( window ).width () > 800 ) {
+        $ ( document ).on ( "mouseover", ".news__item", function (_event, _element) {
+
+            var newsItem = document.querySelectorAll ( '.news__item' );
+            newsItem.forEach ( function (element, index) {
+                element.addEventListener ( 'mouseover', function () {
+                    var x = this.getBoundingClientRect ().left;
+                    var y = this.getBoundingClientRect ().top;
+                    var width = this.getBoundingClientRect ().width;
+                    var height = this.getBoundingClientRect ().height;
+
+                    $ ( '.item-bg' ).addClass ( 'active' );
+                    $ ( '.news__item' ).removeClass ( 'active' );
+                    // $('.news__item').removeClass('active');
+
+
+                    bg.style.width = width + 'px';
+                    bg.style.height = height + 'px';
+                    bg.style.transform = 'translateX(' + x + 'px ) translateY(' + y + 'px)';
+                } );
+
+                element.addEventListener ( 'mouseleave', function () {
+                    $ ( '.item-bg' ).removeClass ( 'active' );
+                    $ ( '.news__item' ).removeClass ( 'active' );
+                } );
+
+            } );
+
+        } );
+    }
+
+
+    var swiper = new Swiper ( '.news-slider', {
+        effect: 'coverflow',
+        grabCursor: true,
+        loop: true,
+        centeredSlides: true,
+        keyboard: true,
+        spaceBetween: 0,
+        slidesPerView: 'auto',
+        speed: 300,
+        coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 0,
+            modifier: 3,
+            slideShadows: false
+        },
+        breakpoints: {
+            480: {
+                spaceBetween: 0,
+                centeredSlides: true
+            }
+        },
+        simulateTouch: true,
+        navigation: {
+            nextEl: '.news-slider-next',
+            prevEl: '.news-slider-prev'
+        },
+        pagination: {
+            el: '.news-slider__pagination',
+            clickable: true
+        },
+        on: {
+            init: function () {
+                var activeItem = document.querySelector ( '.swiper-slide-active' );
+
+                var sliderItem = activeItem.querySelector ( '.news__item' );
+
+                $ ( '.swiper-slide-active .news__item' ).addClass ( 'active' );
+
+                var x = sliderItem.getBoundingClientRect ().left;
+                var y = sliderItem.getBoundingClientRect ().top;
+                var width = sliderItem.getBoundingClientRect ().width;
+                var height = sliderItem.getBoundingClientRect ().height;
+
+
+                $ ( '.item-bg' ).addClass ( 'active' );
+
+                bg.style.width = width + 'px';
+                bg.style.height = height + 'px';
+                bg.style.transform = 'translateX(' + x + 'px ) translateY(' + y + 'px)';
+            }
+        }
+    } );
+
+    swiper.on ( 'touchEnd', function () {
+        $ ( '.news__item' ).removeClass ( 'active' );
+        $ ( '.swiper-slide-active .news__item' ).addClass ( 'active' );
+    } );
+
+    swiper.on ( 'slideChange', function () {
+        $ ( '.news__item' ).removeClass ( 'active' );
+    } );
+
+    swiper.on ( 'slideChangeTransitionEnd', function () {
+        $ ( '.news__item' ).removeClass ( 'active' );
+        var activeItem = document.querySelector ( '.swiper-slide-active' );
+
+        var sliderItem = activeItem.querySelector ( '.news__item' );
+
+        $ ( '.swiper-slide-active .news__item' ).addClass ( 'active' );
+
+        var x = sliderItem.getBoundingClientRect ().left;
+        var y = sliderItem.getBoundingClientRect ().top;
+        var width = sliderItem.getBoundingClientRect ().width;
+        var height = sliderItem.getBoundingClientRect ().height;
+
+
+        $ ( '.item-bg' ).addClass ( 'active' );
+
+        bg.style.width = width + 'px';
+        bg.style.height = height + 'px';
+        bg.style.transform = 'translateX(' + x + 'px ) translateY(' + y + 'px)';
+    } );
+
+
+</script>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../styles/general.css">
+    <link rel="stylesheet" href="styles/settings.css">
+    <title>Help desc</title>
+</head>
+<body>
+<header>
+    <div class="wrapper">
+        <div class="header-container">
+            <div>
+                <a href="../../index.html"><h1 class="header-title wobble-vertical">Help Desc</h1></a>
+            </div>
+            <nav class="nav">
+                <li class="nav_link  wobble-vertical"><a href="../main/main.html">Strona Główna</a></li>
+                <li class="nav_link  active wobble-vertical"><a href="settings.html">Ustawienia</a></li>
+                <li class="nav_link  wobble-vertical"><a href="../kontakt/kontakt.html">Kontakt</a></li>
+                <li class="nav_link  wobble-vertical"><a href="../newsLine/newsLine.html">Nowiny</a></li>
+                <li class="nav_link  wobble-vertical"><a href="../aboutUs/aboutUS.html">O nas</a></li>
+                <li class="nav_link  wobble-vertical"><a href="../todos/todos.html">Plan</a></li>
+                <li class="nav_link  wobble-vertical"><a href="../reviews/reviews.html">Opinia</a></li>
+                <li class="nav_link  wobble-vertical"><a href="../questions/questions.html">Q&A</a></li>
+                <li class="nav_link  wobble-vertical"><a href="../cooperation/cooperation.html">Kooperacja</a></li>
+            </nav>
+        </div>
+    </div>
+</header>
+<section class="settings">
+
+    <div class="wrapper">
+        <div class="todo-error">
+            <div class="conf-modal center error">
+                <div class="modal-icon">
+                    <img src="../../assets/imgs/close.svg">
+                </div>
+                <div class="modal-text error"><h2>Bląd!</h2></div>
+                <p>Nie masz " @ " w mailu!</p>
+                <div class="modal-footer ">
+                    <div class="conf-but error green">Ok</div>
+                </div>
+            </div>
+        <div class="settings-container">
+
+            <div class="setting">
+                <div class="setting-title_container">
+                    <h3 class="setting-title">Username</h3>
+                </div>
+                <div class="setting-value_container">
+                    <h3 class="setting-value log">root</h3>
+                </div>
+                <div class="setting-value-change_container">
+                    <button class="setting-value-change">Zmienić Username</button>
+                </div>
+            </div>
+
+            <div class="setting">
+                <div class="setting-title_container">
+                    <h3 class="setting-title">Hasło</h3>
+                </div>
+                <div class="setting-value_container">
+                    <h3 class="setting-value pass">root</h3>
+                </div>
+                <div class="setting-value-change_container">
+                    <button class="setting-value-change">Zmienić Hasło</button>
+                </div>
+            </div>
+
+            <div class="setting">
+                <div class="setting-title_container">
+                    <h3 class="setting-title">E-mail</h3>
+                </div>
+                <div class="setting-value_container">
+                    <h3 class="setting-value email">czlowiek@edu.cdv.pl</h3>
+                </div>
+                <div class="setting-value-change_container">
+                    <button class="setting-value-change">Zmienić E-mail</button>
+                </div>
+            </div>
+
+            <div class="setting">
+                <div class="setting-title_container">
+                    <h3 class="setting-title">Bazowa informacja</h3>
+                </div>
+                <div style="display:flex;" class="setting-value_container birthday">
+                    <span>Data urodzenia:</span>
+                    <div class="birth-info">
+                        <span class="birth-month">Stychen</span>&nbsp; &nbsp; <span class="birth-year">2002</span>
+                    </div>
+                </div>
+                <div class="setting-value-change_container">
+                    <button class="setting-value-change">Zmienić informacje</button>
+                </div>
+            </div>
+        </div>
+        <div class="new-settings-container">
+
+            <div class="connectAccounts-container" id="connectAccounts-container">
+                <div class="accounts">
+                    <div class="s">
+                        <button><i class="far fa-envelope connect-mail"></i></button>
+                    </div>
+                    <div>
+                        <button><i class="fab fa-facebook-f connect-facebook"></i></button>
+                    </div>
+                </div>
+                <i class="far fa-times-circle" id="close"></i>
+            </div>
+            <div class="setting">
+                <div class="setting-title_container">
+                    <h3 class="setting-title">Username</h3>
+                </div>
+                <div class="setting-value_container">
+                    <form action="">
+                        <input type="text" class="new-setting-value login" placeholder="root">
+                    </form>
+                </div>
+            </div>
+
+            <div class="setting">
+                <div class="setting-title_container">
+                    <h3 class="setting-title">Hasło</h3>
+                </div>
+                <div class="setting-value_container">
+                    <form action="">
+                        <input type="text" class="new-setting-value password" placeholder="root">
+                    </form>
+                </div>
+            </div>
+
+            <div class="setting">
+                <div class="setting-title_container">
+                    <h3 class="setting-title">E-mail</h3>
+                </div>
+                <div class="setting-value_container">
+                    <form action="">
+                        <input type="text" class="new-setting-value mail" placeholder="czlowiek@edu.cdv.pl">
+                    </form>
+                </div>
+            </div>
+
+            <div class="setting">
+                <div class="setting-title_container">
+                    <h3 class="setting-title">Bazowa informacja</h3>
+                </div>
+                <div class="setting-value_container">
+                    <span>Birthday month</span>
+                    <select class="newBirthMonth">
+                        <option value="Styczeń">Styczeń</option>
+                        <option value="Luty">Luty</option>
+                        <option value="Marzec">Marzec</option>
+                        <option value="Kwiecień">Kwiecień</option>
+                        <option value="Maj">Maj</option>
+                        <option value="Czerwiec">Czerwiec</option>
+                        <option value="Lipiec">Lipiec</option>
+                        <option value="Sierpień">Sierpień</option>
+                        <option value="Wrzesień">Wrzesień</option>
+                        <option value="Październik">Październik</option>
+                        <option value="Listopad">Listopad</option>
+                        <option value="Grudzień">Grudzień</option>
+                    </select>
+                    <select class="newBirthYear">
+                        <option value="2015">2015</option>
+                        <option value="2014">2014</option>
+                        <option value="2013">2013</option>
+                        <option value="2012">2012</option>
+                        <option value="2011">2011</option>
+                        <option value="2010">2010</option>
+                        <option value="2009">2009</option>
+                        <option value="2008">2008</option>
+                        <option value="2007">2007</option>
+                        <option value="2006">2006</option>
+                        <option value="2005">2005</option>
+                        <option value="2004">2004</option>
+                        <option value="2003">2003</option>
+                        <option value="2002">2002</option>
+                        <option value="2001">2001</option>
+                        <option value="2000">2000</option>
+                        <option value="1999">1999</option>
+                        <option value="1998">1998</option>
+                        <option value="1997">1997</option>
+                        <option value="1996">1996</option>
+                        <option value="1995">1995</option>
+                        <option value="1994">1994</option>
+                        <option value="1993">1993</option>
+                        <option value="1992">1992</option>
+                        <option value="1991">1991</option>
+                        <option value="1990">1990</option>
+                    </select>
+                </div>
+            </div>
+            <div class="new-setting-save-value-container">
+                <button class="new-setting-save-value">Zachować</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="wrapper">
+        <div class="footer-social-container">
+            <div class="developer-info">
+                <div class="developer_name-container">
+                    <h3 class="developer_name">Wykonane przez Dmytro Kazantsev</h3>
+                </div>
+                <div class="developer-social-link-container">
+                    <div>
+                        <a href="https://www.facebook.com/profile.php?id=100017103918497"><i
+                                class="fab fa-facebook-f"></i></a>
+                    </div>
+                    <div>
+                        <a href="https://www.instagram.com/dimovski__/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="developer-info">
+                <div class="developer_name-container">
+                    <h3 class="developer_name">Wykonane przez Sebastian Koper</h3>
+                </div>
+                <div class="developer-social-link-container">
+                    <div>
+                        <a href="https://www.facebook.com/sebastian.koper.161/"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                    <div>
+                        <a href="https://www.instagram.com/sebastian_koper_/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+<script src="scripts/settings.js"></script>
+</html>
